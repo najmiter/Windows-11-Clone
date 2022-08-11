@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="511.999" height="511.999" viewBox="0 0 242 242">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #00aeef;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="25" y="25" width="192" height="192" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMTkyIiB5MT0iMTkyIiB4Mj0iMCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMDA1IiBzdG9wLWNvbG9yPSIjOTRlM2Y5Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC45OTUiIHN0b3AtY29sb3I9IiMxMjk0ZTUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiLz4KPC9zdmc+Cg=="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feGaussianBlur result="blur" stdDeviation="5.196" in="SourceAlpha"/>
+      <feFlood result="flood" flood-opacity="0.11"/>
+      <feComposite result="composite-2" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="-0.707" dy="-0.707"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-2" d="M28,25h91a0,0,0,0,1,0,0v93.625a0,0,0,0,1,0,0H25a0,0,0,0,1,0,0V28A3,3,0,0,1,28,25Z"/>
+    <path id="Rounded_Rectangle_1_copy" data-name="Rounded Rectangle 1 copy" class="cls-2" d="M123,25h91a3,3,0,0,1,3,3v90.625a0,0,0,0,1,0,0H123a0,0,0,0,1,0,0V25A0,0,0,0,1,123,25Z"/>
+    <path id="Rounded_Rectangle_1_copy_2" data-name="Rounded Rectangle 1 copy 2" class="cls-2" d="M25,123.375h94a0,0,0,0,1,0,0V217a0,0,0,0,1,0,0H28a3,3,0,0,1-3-3V123.375A0,0,0,0,1,25,123.375Z"/>
+    <path id="Rounded_Rectangle_1_copy_2-2" data-name="Rounded Rectangle 1 copy 2" class="cls-2" d="M123,123.375h94a0,0,0,0,1,0,0V214a3,3,0,0,1-3,3H123a0,0,0,0,1,0,0V123.375A0,0,0,0,1,123,123.375Z"/>
+  </g>
+</svg>

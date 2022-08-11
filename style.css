@@ -1,0 +1,347 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--textColor);
+    scroll-behavior: smooth;
+    /* it works on my device */
+    /* the code is a mess. it works tho */
+
+}
+:root{
+    --task-height: 7vh;
+    --popup-height: 82vh;
+    --popup-width: 45%;
+    --textColor: #cdd0d4;
+    --backColor: rgba(38, 38, 38, 0.56);
+    --hovColor: rgba(101, 101, 101, 0.233);
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(./xp.jpg) center top/cover;
+}
+
+.taskbar{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+}
+.actual-taskbar{
+    position: absolute;
+    height: var(--task-height);
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    backdrop-filter: blur(50px);
+    z-index: 20;
+}
+.actual-taskbar .center-tb{
+    height: var(--task-height);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.actual-taskbar .center-tb img{
+    height: 44px;
+    margin: 0px 10px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.right-taskbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1%;
+}
+
+.white-img{
+    filter: invert(100%);
+    width: 39px;
+    height: 39px;
+
+}
+
+.actual-taskbar .center-tb img:hover{
+    background-color: var(--backColor);
+    border-radius: 4px;
+}
+
+.hovActive{
+    background-color: var(--backColor);
+    border-radius: 4px;
+}
+.actual-taskbar .center-tb img::after:hover{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: greenyellow;
+    height: 2px;
+    width: 100%;
+
+    z-index: 461971983617;
+}
+
+.taskbar-clr{
+    position: absolute;
+    background-color: var(--backColor);
+    bottom: 0%;
+    left: 0%;
+    height: var(--task-height);
+    width: 100%;
+}
+.popup{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+.actual-popup,
+.popup-clr{
+    position: absolute;
+    height: var(--popup-height);
+    width: var(--popup-width);
+    border-radius: 8px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+.actual-popup{
+    backdrop-filter: blur(50px);
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% 10% 5% 1fr 7% 1fr 9.5%;
+}
+.popup-clr{
+    background-color: rgba(38, 38, 38, 0.56);
+}
+
+.popActive{
+    position: absolute;
+    top: -3%;
+    left: 0%;
+}
+
+.search-box{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#search-box{
+    padding: 12px;
+    width: 100%;
+    background-color: var(--backColor);
+    border: 1px solid #4f5a6f;
+    outline: none;
+    border-radius: 5px;
+    border-bottom: 3px solid #60cdff;
+    position: relative;
+}
+
+.stuff,
+.recommended,
+.recent,
+.profile{
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stuff{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    z-index: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.allApps{
+    background-color: var(--backColor);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.56);
+    backdrop-filter: blur(10px);
+}
+
+.allApps:hover{
+    background-color: var(--hovColor);
+}
+
+.pinned{
+    cursor: default;
+}
+
+.recApps{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.appImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+.appImg p{
+    font-size: 13px;
+}
+
+.appImg > img{
+    width: 50px;
+    padding: 10px;
+}
+.appImg:hover{
+    background-color: var(--backColor);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recommended{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.recAppName::first-letter{
+    text-transform: uppercase;
+}
+
+.recOpenedName{
+    padding-left: 20px;
+}
+
+.openDate{
+    font-size: 11px;
+    color: #bababa;
+}
+
+.recOpened{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.fileName,
+.myName{
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.recOpened img{
+    width: 36px;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    text-align: right; 
+    cursor: default; 
+    font-size: 14px; 
+}
+.date p{
+    padding: 3px;
+}
+
+.hover:hover{
+    background-color: var(--backColor);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.user{
+    grid-column: 1 / 4;
+    grid-row: 7 / 8;
+    background-color: rgba(21, 21, 21, 0.493);
+}
+.profile{
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.username{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26%;
+}
+.userImg img{
+    border-radius: 50%;
+    width: 40px;
+}
+.power img{
+    filter: invert(100%);
+    width: 20px;
+    /* isolation: isolate; */
+
+}
+.userImg img:hover{
+    box-shadow: 1px 1px 10px rgba(21, 21, 21, 0.493);
+    cursor: pointer;
+}
+.power{
+    position: relative;
+    /* border: 2px solid white; */
+}
+.power-menu{
+    position: absolute;
+    /* good luck positioning this one */
+    top: 500%;
+    left: -10%;
+    height: 110px;
+    width: 86px;
+    background-color: var(--backColor);
+    padding: 5px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+
+}
+.power-menu-vis{
+    position: absolute;
+    top: -555%;
+    left: -10%;
+}
+.power-menu p{
+    font-size: 13px;
+    cursor: default;
+    line-height: 2rem;
+}
+
+.nada{
+    padding: 1px 6px;
+}
+
+.nada:hover{
+    background-color: rgba(79, 79, 79, 0.733);
+    border-radius: 4px;
+    cursor: pointer;
+}
