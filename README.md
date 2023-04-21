@@ -8,6 +8,8 @@ Although I am not on the path to be Web Developer, but I love creating beatuful 
 You are free to use the code in this project anywhere you like. I do own it but it's code and we are programmers. Code doesn't really belong to just one of us :D. Seriously though, use the code as you wish. Just give some sort of credit in the corner. I'll do appreciate that. xD
 
 # Preview
+All of the assets are in `svg` format. The searching also works. Each button is also clickable.
+
 ## Official Wallpaper
 <img width="1680" alt="Windows 11 clone by CodeMite @najmiter" src="https://user-images.githubusercontent.com/85332859/233588697-bc365e7b-d736-4f6b-a7a8-e5268b359c3b.png">
 
