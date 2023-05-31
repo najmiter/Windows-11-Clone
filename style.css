@@ -5,8 +5,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--textColor);
     scroll-behavior: smooth;
-    /* it works on my device */
-    /* the code is a mess. it works tho */
 
 }
 :root{
@@ -21,7 +19,7 @@ body{
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: url(assets/wallpapers/Windows\ 11\ Wallpaper\ 2.jpg) center top/cover;
+    background: url(assets/wallpapers/Windows 11 Wallpaper 2.jpg) center top/cover;
 }
 
 .taskbar{
