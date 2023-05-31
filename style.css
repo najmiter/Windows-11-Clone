@@ -21,7 +21,7 @@ body{
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: url(./assets/wallpapers/Windows 11 Wallpaper 2.jpg) center top/cover;
+    background: url(assets/wallpapers/Windows 11 Wallpaper 2.jpg) center top/cover;
 }
 
 .taskbar{
