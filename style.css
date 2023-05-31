@@ -255,6 +255,11 @@ body{
     padding-bottom: 5px;
 }
 
+.myName{
+    width: 90px;
+    text-algin: left;
+}
+
 .recOpened img{
     width: 36px;
 }
