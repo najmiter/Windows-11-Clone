@@ -105,3 +105,23 @@ nada.forEach(function(el){
         }, 1500);
     })
 })
+const setDate = function () {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    const taskDate = document.querySelector(`#taskDate`);
+    taskDate.innerHTML = `${day}/${month + 1}/${year}`;
+}
+
+const setTime = function(){
+    const date = new Date();
+    const hour = date.getHours();
+    const minute = date.getMinutes();
+    const seconds = date.getSeconds();
+    const taskTime = document.querySelector(`#taskTime`);
+    taskTime.innerHTML = `${hour} : ${minute} : ${seconds}`;
+}
+const refresh = 1000;  //this will fetch the time every one second
+setInterval(setDate, refresh);
+setInterval(setTime, refresh);
