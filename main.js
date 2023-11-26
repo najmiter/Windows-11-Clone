@@ -36,10 +36,10 @@ startMenu.addEventListener('click', function () {
 
 let search = document.getElementById('search-box');
 search.addEventListener('input', function () {
-    let searched = search.value;
+    let searched = search.value.toLowerCase();
     let apps = document.getElementsByClassName('appImg');
     Array.from(apps).forEach(function (button) {
-        let appName = button.getElementsByClassName('recAppName')[0].innerText;
+        let appName = button.getElementsByClassName('recAppName')[0].innerText.toLowerCase();
         if (appName.startsWith(searched)) {
             button.style.display = "flex";
         }
