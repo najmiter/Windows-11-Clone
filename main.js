@@ -40,7 +40,7 @@ search.addEventListener('input', function () {
     let apps = document.getElementsByClassName('appImg');
     Array.from(apps).forEach(function (button) {
         let appName = button.getElementsByClassName('recAppName')[0].innerText;
-        if (appName.includes(searched)) {
+        if (appName.startsWith(searched)) {
             button.style.display = "flex";
         }
         else {
